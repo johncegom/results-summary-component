@@ -3,17 +3,28 @@
     src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
 body {
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     /* background-color: black; */
     font-family: HankenGrotesk-VariableFont_wght;
 }
 
 .main {
+    height: 70%;
     display: flex;
     margin:auto auto auto auto;
-    width: fit-content;
-    height: auto;
+    width: 35rem;
     box-shadow: 10px 15px 10px 0px hsl(221, 100%, 96%);
     border-radius: 1.5rem;
 }
@@ -22,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:space-around;
     border-radius: 1.5rem;
     background-color: hsl(241, 81%, 54%);
     background-image:
@@ -35,6 +47,7 @@ body {
 
 .right {
     width: 50%;
+    padding-left: 2.2rem;
 }
 
 .circle {
@@ -47,16 +60,78 @@ body {
         transparent
     );
     border-radius: 5rem;
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
     text-align: center;
 }
 
 .circle h1 {
-    color: hsl(0, 0%, 100%);
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 100%, 0.9);
 }
 
 .circle p {
+    margin-top: 0;
     color: hsl(241, 100%, 89%, 0.5);
     font-weight: 600;
+}
+
+.description {
+    font-size: 18px;
+    color: hsl(224, 30%, 80%, 0.8);
+    text-align: center;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.evaluation {
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+}
+
+.left h3 {
+    margin-top: 1rem;
+    color: hsl(224, 30%, 80%, 1);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.right h1 {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.right .reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    width: 80%;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.right .reaction .title {
+    color: hsl(0, 100%, 67%);
+    font-weight: 800;
+}
+
+.right .point {
+    font-weight: 800;
+    opacity: 0.9;
+    margin-left: auto;
+}
+
+.right .memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    width: 80%;
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.right .memory .title {
+    color: hsl(39, 100%, 56%);
+    font-weight: 800;
 }
