@@ -16,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: black; */
     font-family: HankenGrotesk-VariableFont_wght;
 }
 
@@ -99,7 +98,28 @@ body {
 
 .right h1 {
     font-size: 1.3rem;
+    font-weight: 800;
     margin: 1.5rem 0 1.5rem 0;
+}
+
+.right img {
+    margin-right: 0.5rem;
+}
+
+.right .point {
+    font-weight: 700;
+    opacity: 0.9;
+    margin-left: auto;
+}
+
+.right .divide-100 {
+    color: gray;
+    font-weight: 700;
+}
+
+.right .divide {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
 .right .reaction {
@@ -116,17 +136,11 @@ body {
     font-weight: 800;
 }
 
-.right .point {
-    font-weight: 800;
-    opacity: 0.9;
-    margin-left: auto;
-}
-
 .right .memory {
     background-color: hsl(39, 100%, 56%, 0.1);
     width: 80%;
     display: flex;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -134,4 +148,52 @@ body {
 .right .memory .title {
     color: hsl(39, 100%, 56%);
     font-weight: 800;
+}
+
+.right .verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    width: 80%;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.right .verbal .title {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.right .visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    width: 80%;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.right .visual .title {
+    color: hsl(234, 85%, 45%);
+    font-weight: 800;
+}
+
+.right button {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 600;
+    background-color: hsl(224, 30%, 27%);
+}
+
+.right button:hover {
+    cursor: pointer;
+    background-color: hsl(252, 100%, 55%);
+    background-image:
+    linear-gradient(
+        to left,
+        hsl(252, 100%, 50%),
+        hsl(241, 81%, 54%)
+    );
 }
